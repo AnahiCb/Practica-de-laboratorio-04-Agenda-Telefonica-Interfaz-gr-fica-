@@ -17,7 +17,7 @@ public class Test {
     public static void main(String[] args) {
 
         VentanaAgenda principal = new VentanaAgenda("Agenda Telefonica (Interfaz Grafica)");
-        principal.setSize(900, 600);
+        principal.setSize(800, 600);
         principal.setLocation(new Point(250, 50));
 
     }

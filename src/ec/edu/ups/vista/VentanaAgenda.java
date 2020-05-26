@@ -17,17 +17,14 @@ public class VentanaAgenda extends Frame {
         this.setTitle(title);
 
         this.setSize(850, 600);
-        this.setLocation(new Point(410, 10));
+        this.setLocation(new Point(600, 10));
 
         Panel panelPrincipal = new Panel();
         Panel panelNorte = new Panel();
         Panel panelCentro = new Panel();
-        Panel panelRegistrar = new Panel();
         Panel registrar = new Panel();
-        Panel panelSur = new Panel();
         BorderLayout posiciones = new BorderLayout();
 
-        GridLayout mallaP = new GridLayout(4, 2, 5, 5);
 
         this.setLayout(posiciones);
 
@@ -83,7 +80,7 @@ public class VentanaAgenda extends Frame {
         Label editarT = new Label("Editar un Telefono");
         Label espacio2 = new Label("");
         Label codigoE = new Label("Escriba el codigo del telefono a editar:");
-        TextField codigoE1 = new TextField("1", 4);
+        TextField codigoE1 = new TextField("", 4);
         Label numeroE = new Label("Numero (nuevo)");
         TextField numeroE2 = new TextField("", 4);
         Label tipoE = new Label("Tipo (nuevo):");
@@ -118,7 +115,7 @@ public class VentanaAgenda extends Frame {
         Label eliminar = new Label("Eliminar Telefono");
         Label espacio3= new Label("");
         Label eliminarT = new Label("Codigo del telefono a eliminar:");
-        TextField eliminarT2 = new TextField("1", 5);
+        TextField eliminarT2 = new TextField("", 5);
         Button eliminarT3 = new Button("Cancelar");
         eliminarT3.setBackground(Color.lightGray);
         eliminarT3.setForeground(Color.blue);
@@ -139,7 +136,7 @@ public class VentanaAgenda extends Frame {
         
         Label buscar = new Label("Buscar un telefono");
         Label buscarT = new Label("Escriba el codigo del telefono a buscar:");
-        TextField buscarT2 = new TextField("1", 5);
+        TextField buscarT2 = new TextField("", 5);
         Button buscarT3 = new Button("Buscar");
         buscarT3.setBackground(Color.lightGray);
         buscarT3.setForeground(Color.blue);
@@ -157,14 +154,20 @@ public class VentanaAgenda extends Frame {
         panelListar.setLayout(mallaL);
 
         Label listar = new Label("Listar sus telefonos");
+        Label espacio4= new Label("");
         Button listarT = new Button("Listar sus telefonos");
         listarT.setBackground(Color.lightGray);
         listarT.setForeground(Color.blue);
+        Button atras = new Button("Atras");
+        atras.setBackground(Color.lightGray);
+        atras.setForeground(Color.blue);
         
         panelListar.add(listar);
+        panelListar.add(espacio4);
         panelListar.add(listarT);
-
+        panelListar.add(atras);
         panelCentro.add(panelListar);
+        
         panelCentro.setBackground(Color.white);
         panelCentro.setForeground(Color.black);
 
