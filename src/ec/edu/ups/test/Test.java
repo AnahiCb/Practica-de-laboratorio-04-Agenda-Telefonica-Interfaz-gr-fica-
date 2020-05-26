@@ -5,10 +5,21 @@
  */
 package ec.edu.ups.test;
 
+import ec.edu.ups.vista.VentanaAgenda;
+import java.awt.*;
+
 /**
  *
  * @author Anahi
  */
 public class Test {
-    
+
+    public static void main(String[] args) {
+
+        VentanaAgenda principal = new VentanaAgenda("Agenda Telefonica (Interfaz Grafica)");
+        principal.setSize(900, 600);
+        principal.setLocation(new Point(250, 50));
+
+    }
+
 }
